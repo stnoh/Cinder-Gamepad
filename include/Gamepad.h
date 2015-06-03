@@ -33,7 +33,7 @@ extern "C" {
 
 #define	bool	_Bool
 #if __STDC_VERSION__ < 199901L && __GNUC__ < 3
-typedef	int	_Bool;
+//typedef	int	_Bool; // Quick-fix for compiling in VS2013
 #endif
 
 #endif /* !__cplusplus */
