@@ -26,9 +26,11 @@
 	</platform>
 	<platform os="msw">
 		<platform config="Debug">
+			<staticLibrary absolute="true"> winmm.lib</staticLibrary>
 			<staticLibrary>lib/msw/x86/Gamepad_d.lib</staticLibrary>
 		</platform>
 		<platform config="Release">
+			<staticLibrary absolute="true"> winmm.lib</staticLibrary>
 			<staticLibrary>lib/msw/x86/Gamepad.lib</staticLibrary>
 		</platform>
 	</platform>	

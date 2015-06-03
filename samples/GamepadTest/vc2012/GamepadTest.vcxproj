@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -64,7 +64,7 @@
       <AdditionalIncludeDirectories>..\..\..\..\..\include;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>Gamepad_d.lib;winmm.lib;cinder-v110_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Gamepad_d.lib;winmm.lib;cinder-$(PlatformToolset)_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\..\..\..\lib\msw;..\..\..\..\..\lib\msw\x86;..\..\..\lib\msw\x86</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -93,7 +93,7 @@
       <AdditionalIncludeDirectories>..\..\..\..\..\include;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>Gamepad.lib;winmm.lib;cinder-v110.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Gamepad.lib;winmm.lib;cinder-$(PlatformToolset).lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\..\..\..\lib\msw;..\..\..\..\..\lib\msw\x86;..\..\..\lib\msw\x86</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateMapFile>true</GenerateMapFile>
